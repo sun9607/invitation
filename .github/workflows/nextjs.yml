@@ -1,0 +1,70 @@
+name: Next CI/CD
+
+on:
+  push:
+    branches: ["main"]
+
+env:
+  AWS_REGION: ap-northeast-2
+  S3_BUCKET: heliumgas-deploy
+  S3_DEPLOY_FILE: heliumgas-next
+  CODEDEPLOY_APP: heliumgas-app
+  CODEDEPLOY_GROUP: heliumgas-app-next
+  CODEDEPLOY_CONFIG: CodeDeployDefault.AllAtOnce
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      - name: Cache node modules
+        uses: actions/cache@v3
+        with:
+          path: |
+              ~/.npm
+              .next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+                ${{ runner.os }}-nextjs-
+
+      - name: next Install
+        run: yarn install
+
+      - name: next Build
+        run: yarn build
+
+      - name: build zip
+        run: |
+          mkdir app
+          cp -r public/ app/
+          cp -r .next/standalone/ app/
+          cp -r .next/static/ app/
+          cp -r scripts/ app/
+          cp -r appspec.yml app/
+          cp -r ecosystem.config.cjs app/
+          cd app && zip -qq -r ../${{ env.S3_DEPLOY_FILE }}.zip ./*
+
+      - name: AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Upload to S3
+        run: |
+          aws s3 cp --region ${{ env.AWS_REGION }} ./${{ env.S3_DEPLOY_FILE }}.zip s3://${{ env.S3_BUCKET }}
+
+      - name: Run to Codedeploy
+        run: |
+          aws deploy create-deployment --application-name ${{ env.CODEDEPLOY_APP }} \
+          --deployment-group-name ${{ env.CODEDEPLOY_GROUP }} \
+          --deployment-config-name ${{ env.CODEDEPLOY_CONFIG }} \
+          --s3-location bucket=${{ env.S3_BUCKET }},bundleType=zip,key=${{ env.S3_DEPLOY_FILE }}.zip
