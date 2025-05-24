@@ -1,0 +1,48 @@
+{
+  "bgm": [
+    {
+      "value": 0,
+      "label": "Falling",
+      "fileName": "1_Falling.mp3"
+    },
+    {
+      "value": 1,
+      "label": "Bicycle Ride",
+      "fileName": "2_Bicycle_Ride.mp3"
+    },
+    {
+      "value": 2,
+      "label": "Because of You",
+      "fileName": "3_Because_of_You.mp3"
+    },
+    {
+      "value": 3,
+      "label": "Cards Youre Dealt",
+      "fileName": "4_Cards_Youre_Dealt.mp3"
+    },
+    {
+      "value": 4,
+      "label": "Happy Birthday",
+      "fileName": "5_Happy_Birthday.mp3"
+    },
+    {
+      "value": 5,
+      "label": "Memory Lane",
+      "fileName": "6_Memory_Lane.mp3"
+    },
+    {
+      "value": 6,
+      "label": "We Wish You a Merry Christmas",
+      "fileName": "7_We_Wish_You_a_Merry_Christmas.mp3"
+    },
+    {
+      "value": 7,
+      "label": "Auld Lang Syne",
+      "fileName": "8_Auld_Lang_Syne.mp3"
+    },
+    {
+      "value": 8,
+      "label": "선택 안함"
+    }
+  ]
+}

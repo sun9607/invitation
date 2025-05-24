@@ -1,0 +1,191 @@
+{
+  "colors": ["#f6f6f6", "#FFF5DA", "#FFECE6", "#EECCC3", "#C8ECFC"],
+  "placeholder": {
+    "photo": "존경의 마음을 표현하세요",
+    "special": "감사의 마음을 표현하세요",
+    "love": "애정의 글을 적어주세요"
+  },
+  "introEffects": [
+    {
+      "value": 0,
+      "label": "없음"
+    },
+    {
+      "value": 1,
+      "label": "물결"
+    },
+    {
+      "value": 2,
+      "label": "안개"
+    }
+  ],
+  "introParticles": [
+    {
+      "value": 0,
+      "label": "없음"
+    },
+    {
+      "value": 1,
+      "label": "벚꽃"
+    },
+    {
+      "value": 2,
+      "label": "데이지"
+    },
+    {
+      "value": 3,
+      "label": "은행잎"
+    },
+    {
+      "value": 4,
+      "label": "얼음꽃"
+    },
+    {
+      "value": 5,
+      "label": "하트"
+    },
+    {
+      "value": 6,
+      "label": "종이폭죽1"
+    },
+    {
+      "value": 7,
+      "label": "종이폭죽2"
+    }
+  ],
+  "themeFonts": [
+    {
+      "value": "pretendard",
+      "label": "프리텐다드"
+    },
+    {
+      "value": "TTBookendBatangR",
+      "label": "북엔드바탕체"
+    },
+    {
+      "value": "KimjungchulScript",
+      "label": "김정철체"
+    },
+    {
+      "value": "BMYEONSUNG",
+      "label": "배달의민족연성체"
+    },
+    {
+      "value": "HakgyoansimGaeulsopungB",
+      "label": "학교안심가을소풍"
+    }
+  ],
+  "templates": {
+    "special": {
+      "classic": [
+        { "x": 45, "y": 120, "width": 290, "height": 360 },
+        { "x": 35, "y": 110, "width": 305, "height": 360 },
+        { "x": 40, "y": 120, "width": 290, "height": 380 },
+        { "x": 45, "y": 120, "width": 290, "height": 365 },
+
+        { "x": 45, "y": 120, "width": 290, "height": 365 },
+        { "x": 45, "y": 120, "width": 290, "height": 365 },
+        { "x": 40, "y": 110, "width": 295, "height": 380 },
+        { "x": 45, "y": 115, "width": 290, "height": 372 },
+
+        { "x": 45, "y": 115, "width": 285, "height": 372 },
+        { "x": 35, "y": 112, "width": 302, "height": 380, "radius": 200 },
+        { "x": 42, "y": 192, "width": 291, "height": 219, "radius": 16 },
+        { "x": 42, "y": 192, "width": 291, "height": 219, "radius": 16 }
+      ],
+      "moment": [
+        { "x": 45, "y": 120, "width": 290, "height": 360 },
+        { "x": 44, "y": 118, "width": 288, "height": 362 },
+        { "x": 44, "y": 118, "width": 285, "height": 362 },
+        { "x": 44, "y": 118, "width": 285, "height": 362, "radius": 16 },
+
+        { "x": 44, "y": 118, "width": 288, "height": 358, "radius": 16 },
+        { "x": 44, "y": 118, "width": 288, "height": 365, "radius": 16 },
+        { "x": 43, "y": 118, "width": 288, "height": 365, "radius": 25 },
+        { "x": 45, "y": 120, "width": 285, "height": 360},
+
+        { "x": 44, "y": 119, "width": 288, "height": 362},
+        { "x": 42, "y": 192, "width": 291, "height": 219, "radius": 20 },
+        { "x": 42, "y": 192, "width": 291, "height": 219, "radius": 20 },
+        { "x": 42, "y": 192, "width": 291, "height": 219, "radius": 20 }
+      ]
+    },
+    "photo": [
+      {
+        "x": 96,
+        "y": 226,
+        "width": 700,
+        "height": 810
+      },
+      {
+        "x": 96,
+        "y": 226,
+        "width": 700,
+        "height": 810
+      },
+      {
+        "x": 97,
+        "y": 293,
+        "width": 700,
+        "height": 680
+      },
+      {
+        "x": 176,
+        "y": 376,
+        "width": 537,
+        "height": 511
+      },
+      {
+        "x": 125,
+        "y": 408,
+        "width": 632,
+        "height": 432
+      },
+      {
+        "x": 73,
+        "y": 574,
+        "width": 748,
+        "height": 474,
+        "upperRadius": 368
+      },
+      {
+        "x": 77,
+        "y": 261,
+        "width": 750,
+        "height": 756
+      }
+    ]
+  },
+  "fontSize": [
+    {
+      "label": "보통",
+      "value": "medium"
+    },
+    {
+      "label": "크게",
+      "value": "large"
+    }
+  ],
+  "letterFonts": [
+    {
+      "value": "eunhasu",
+      "label": "학교안심은하수"
+    },
+    {
+      "value": "redWhale",
+      "label": "빨간고래"
+    },
+    {
+      "value": "KCCBangJeonghwan",
+      "label": "방정환체"
+    },
+    {
+      "value": "GamjaFlower",
+      "label": "감자꽃"
+    },
+    {
+      "value": "YanoljaYacheR",
+      "label": "야놀자야체"
+    }
+  ]
+}

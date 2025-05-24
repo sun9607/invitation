@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Single+Day&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://www.ownglyph.com/trial/4ad5aad9-731c-49f2-a679-f84a440b5897");
+// @font-face {
+//   font-family: "Pretendard-Regular";
+//   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+//     format("woff");
+// }
+
+// @font-face {
+//   font-family: "GowunBatang-Regular";
+//   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff")
+//     format("woff");
+// }
+
+// @font-face {
+//   font-family: "Hahmlet-Regular";
+//   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Regular.woff2")
+//     format("woff2");
+// }
+
+// @font-face {
+//   font-family: "NanumSquareNeo-Variable";
+//   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2")
+//     format("woff2");
+// }
+
+// @font-face {
+//   font-family: "TTHakgyoansimMonggeulmonggeulR";
+//   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimMonggeulmonggeulR.woff2")
+//     format("woff2");
+// }
+
+
+// 테마폰트
+// 1.프리텐다드 
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+// 2.북엔드바탕체(R)
+@font-face {
+  font-family: 'TTBookendBatangR';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-2@1.0/TTBookendBatangR.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+// 3.김정철체(bold)
+@font-face {
+  font-family: 'KimjungchulScript';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulScript-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+// 4.배달의민족연성체
+@font-face {
+  font-family: 'BMYEONSUNG';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMYEONSUNG.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// 5.학교안심가을소풍(B)
+@font-face {
+  font-family: 'HakgyoansimGaeulsopungB';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimGaeulsopungB.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.notoSans * {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.pretendard * {
+  font-family: "Pretendard-Regular";
+}
+
+.gowunbatang * {
+  font-family: "GowunBatang-Regular";
+}
+
+.iropke * {
+  font-family: "Iropke Batang";
+}
+
+.hamlet * {
+  font-family: "Hahmlet-Regular";
+}
+
+.nanumSquare * {
+  font-family: "NanumSquareNeo-Variable";
+}
+
+.mongle * {
+  font-family: "TTHakgyoansimMonggeulmonggeulR";
+}
+
+.YanoljaYacheR * {
+  font-family: "YanoljaYacheR";
+}
+
+.BMYEONSUNG * {
+  font-family: "BMYEONSUNG";
+}
+
+.KimjungchulScript * {
+  font-family: "KimjungchulScript";
+}
+
+.HakgyoansimGaeulsopungB * {
+  font-family: "HakgyoansimGaeulsopungB";
+}
+
+.HakgyoansimGaeulsopungB * {
+  font-family: "HakgyoansimGaeulsopungB";
+}
+
+.TTBookendBatangR * {
+  font-family: "TTBookendBatangR";
+}
+
+.redWhale * {
+  font-family: "redWhale";
+}
+
+.fontMedium * {
+  font-size: 12px;
+}
+
+.fontLarge * {
+  font-size: 15px;
+}
+
+.fontSmall * {
+  font-size: small;
+}

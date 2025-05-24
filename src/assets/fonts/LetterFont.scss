@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "Single Day", serif;
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Single+Day&display=swap");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "redWhale";
+  src: url("./온글잎 빨간고래.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Diphylleia-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_JAMO@1.0/Diphylleia-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "iropke";
+  src: url("//fastly.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+// [편지지 폰트]
+// 1.학교안심은하수(R)
+@font-face {
+  font-family: 'TTHakgyoansimEunhasuR';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimEunhasuR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// 2.온글잎 빨간고래
+@font-face {
+  font-family: "redWhale";
+  src: url("./온글잎 빨간고래.ttf") format("truetype");
+}
+
+// 3.방정환체
+@font-face {
+  font-family: 'KCCBangJeonghwan';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2411-2@1.0/KCCBangJeonghwan.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// 4.감자꽃
+@font-face {
+  font-family: "GamjaFlower";
+  src: url("./GamjaFlower.ttf") format("truetype");
+}
+
+// 5.야놀자야체(R)
+@font-face {
+  font-family: 'YanoljaYacheR';
+  src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/YanoljaYacheR.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.GamjaFlower * {
+  font-family: "GamjaFlower", serif !important;
+}
+
+.KCCBangJeonghwan * {
+  font-family: "KCCBangJeonghwan", serif !important;
+}
+
+.YanoljaYacheR * {
+  font-family: "YanoljaYacheR", serif !important;
+}
+
+.singleDay * {
+  font-family: "Single Day", serif !important;
+}
+
+.redWhale * {
+  font-family: "redWhale" !important;
+}
+
+.eunhasu * {
+  font-family: "TTHakgyoansimEunhasuR" !important;
+}
+
+.Diphylleia * {
+  font-family: "Diphylleia-Regular" !important;
+}
+
+.iropke * {
+  font-family: "iropke" !important;
+}

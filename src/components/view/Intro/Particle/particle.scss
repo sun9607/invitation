@@ -1,0 +1,32 @@
+@keyframes blossom-fall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(50vh) translateX(100px) rotate(180deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(100vh) translateX(200px) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+.blossom {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  .petal {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+    user-select: none;
+    animation: blossom-fall 20s linear infinite running;
+  }
+}

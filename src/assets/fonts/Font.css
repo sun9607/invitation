@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "LINESeedKR";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./LINESeedKR-Rg.eot");
+}
+
+@font-face {
+  font-family: "LINESeedKR";
+  font-style: normal;
+  font-weight: bold;
+  src: url("./LINESeedKR-Bd.eot");
+}
+
+@font-face {
+  font-family: "LINESeedKR";
+  font-style: normal;
+  font-weight: lighter;
+  src: url("./LINESeedKR-Th.eot");
+}
+
+@font-face {
+  font-family: "LINESeedEN";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./LINESeedSans_W_Rg.eot");
+}
+
+@font-face {
+  font-family: "LINESeedEN";
+  font-style: normal;
+  font-weight: bold;
+  src: url("./LINESeedSans_W_Bd.eot");
+}
+
+@font-face {
+  font-family: "LINESeedEN";
+  font-style: normal;
+  font-weight: lighter;
+  src: url("./LINESeedSans_W_Th.eot");
+}
+
+* {
+  font-family: "LINESeedEN", "LINESeedKR";
+}
